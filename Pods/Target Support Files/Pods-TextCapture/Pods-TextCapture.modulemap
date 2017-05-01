@@ -1,0 +1,6 @@
+framework module Pods_TextCapture {
+  umbrella header "Pods-TextCapture-umbrella.h"
+
+  export *
+  module * { export * }
+}
