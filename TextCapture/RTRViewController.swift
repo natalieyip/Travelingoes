@@ -4,8 +4,12 @@
 import UIKit
 import AVFoundation
 import Alamofire
+import PCLBlurEffectAlert
+import SwiftyJSON
 
 class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AVCaptureVideoDataOutputSampleBufferDelegate, RTRRecognitionServiceDelegate {
+    
+    
     
     /// Cell ID for languagesTableView
     private let RTRVideoScreenCellName = "VideoScreenCell"
@@ -16,7 +20,7 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     /// Stop/Start capture button
     @IBOutlet weak var captureButton: UIButton!
     
-    /// Recognition languages table
+    // Recognition languages table
     @IBOutlet weak var languagesTableView: UITableView!
     @IBOutlet weak var recognizeLanguageButton: UIBarButtonItem!
     
@@ -285,6 +289,8 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         if progress == .stable {
             if let recognizedString = recognizedString {
                 textToTranslate = recognizedString
+                
+                
                 print("This is final string thats available: \(textToTranslate)")
                 
                 Alamofire.request("https://translation.googleapis.com/language/translate/v2?key=AIzaSyDKA149_eTmknKyTY28YkmlmyB8D7xjAXw&target=en&q=\(textToTranslate)").responseJSON { response in
@@ -292,8 +298,25 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                     print(response.result)
                     
                     if let result = response.result.value {
-                        let JSON = result as! NSDictionary
-                        print(JSON)
+//                        let JSON = result as! NSDictionary
+                        let json = JSON(result)
+                       
+                       
+                        let translatedWord = json["data"]["translations"][0]["translatedText"]
+                        
+//                        @IBAction func AlertView(_ sender: Any) {
+                            let alert = PCLBlurEffectAlert.Controller(title: "Translation", message: "\(translatedWord)" , effect: UIBlurEffect(style: .extraLight), style: .alert)
+                            let alertBtn = PCLBlurEffectAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                            
+                            alert.addAction(alertBtn)
+                            alert.show()
+                        
+//                        }
+                        
+                        
+//                        if let resultConst = response.result.value {
+//                            AlertView(_ : "Hello")
+//                        }
                         
                     }
                 }

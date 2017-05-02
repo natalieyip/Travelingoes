@@ -6,5 +6,7 @@ target 'TextCapture' do
 
   # Pods for TextCapture
   pod 'Alamofire', '~> 4.4'
+  pod "PCLBlurEffectAlert"
+  pod 'SwiftyJSON'
 end
 
