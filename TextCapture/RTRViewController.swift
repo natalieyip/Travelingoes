@@ -298,25 +298,18 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                     print(response.result)
                     
                     if let result = response.result.value {
-//                        let JSON = result as! NSDictionary
                         let json = JSON(result)
                        
                        
                         let translatedWord = json["data"]["translations"][0]["translatedText"]
                         
-//                        @IBAction func AlertView(_ sender: Any) {
+
                             let alert = PCLBlurEffectAlert.Controller(title: "Translation", message: "\(translatedWord)" , effect: UIBlurEffect(style: .extraLight), style: .alert)
                             let alertBtn = PCLBlurEffectAlertAction(title: "Cancel", style: .cancel, handler: nil)
                             
                             alert.addAction(alertBtn)
                             alert.show()
                         
-//                        }
-                        
-                        
-//                        if let resultConst = response.result.value {
-//                            AlertView(_ : "Hello")
-//                        }
                         
                     }
                 }
