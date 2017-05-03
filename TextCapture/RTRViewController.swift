@@ -303,13 +303,14 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                        
                         let translatedWord = json["data"]["translations"][0]["translatedText"]
                         
-
-                            let alert = PCLBlurEffectAlert.Controller(title: "Translation", message: "\(translatedWord)" , effect: UIBlurEffect(style: .extraLight), style: .alert)
-                            let alertBtn = PCLBlurEffectAlertAction(title: "Cancel", style: .cancel, handler: nil)
-                            
-                            alert.addAction(alertBtn)
-                            alert.show()
                         
+                        
+//
+//                            let alert = PCLBlurEffectAlert.Controller(title: "Translation", message: "\(translatedWord)" , effect: UIBlurEffect(style: .extraLight), style: .alert)
+//                            let alertBtn = PCLBlurEffectAlertAction(title: "Cancel", style: .cancel, handler: nil)
+//                            
+//                            alert.addAction(alertBtn)
+//                            alert.show()
                         
                     }
                 }
@@ -340,6 +341,9 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         
         layer.addSublayer(textLayer)
     }
+    
+    
+    
     
     func drawQuadrangle(_ p0: CGPoint, _ p1: CGPoint, _ p2: CGPoint, _ p3: CGPoint, _ layer: CALayer, _ progress: RTRResultStabilityStatus) {
         let area = CAShapeLayer() 
