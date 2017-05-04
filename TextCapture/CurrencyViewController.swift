@@ -131,7 +131,6 @@ extension CurrencyViewController: SwiftCarouselDelegate {
     func currencyParse(priceBingo: String, completion: @escaping (Double) -> ()) {
         
         Alamofire.request("http://api.fixer.io/latest").responseJSON { response in
-            var multiplier = "test string"
             guard let data = response.result.value else { return }
             guard let result = data as? [String: Any] else { return }
             guard let currencyList = result["rates"] as? [String:AnyObject] else { return }
