@@ -58,65 +58,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpw-Tw-hxG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpw-Tw-hxG">
                                 <rect key="frame" x="16" y="20" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Home"/>
                                 <connections>
                                     <segue destination="scp-0O-9CY" kind="show" id="AQc-cT-qcT"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HtS-7h-5OC" customClass="SwiftCarousel" customModule="SwiftCarousel">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HtS-7h-5OC" customClass="SwiftCarousel" customModule="SwiftCarousel">
                                 <rect key="frame" x="16" y="100" width="288" height="200"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="vbW-Na-Upj"/>
-                                </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What is the target currency?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="551-kB-rUJ">
-                                <rect key="frame" x="51.5" y="71" width="217" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the target currency?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="551-kB-rUJ">
+                                <rect key="frame" x="52" y="71" width="217" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHe-aF-Swq" userLabel="SelectedTextLabel">
-                                <rect key="frame" x="160" y="316" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Currency" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aoc-Dg-sUt">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input Currency" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aoc-Dg-sUt">
                                 <rect key="frame" x="16" y="497" width="191" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alr-Tv-zwm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alr-Tv-zwm">
                                 <rect key="frame" x="241" y="495" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="epF-er-uNg"/>
+                                </constraints>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="tapSubmitButton:" destination="twI-Z6-sk6" eventType="touchUpInside" id="ftk-NC-Rk0"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNA-W4-qBt" userLabel="Price">
+                                <rect key="frame" x="0.0" y="409" width="320" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="cYI-uP-FwH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="HtS-7h-5OC" secondAttribute="trailing" id="03p-Tx-gk9"/>
-                            <constraint firstItem="HtS-7h-5OC" firstAttribute="centerY" secondItem="PKy-3T-2Se" secondAttribute="centerY" id="JEk-j1-psD"/>
-                            <constraint firstItem="BHe-aF-Swq" firstAttribute="top" secondItem="HtS-7h-5OC" secondAttribute="bottom" constant="16" id="cn8-V6-ffU"/>
-                            <constraint firstItem="BHe-aF-Swq" firstAttribute="centerX" secondItem="HtS-7h-5OC" secondAttribute="centerX" id="ik3-UV-jX5"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="HtS-7h-5OC" secondAttribute="leading" id="meb-pi-Lna"/>
-                            <constraint firstItem="HtS-7h-5OC" firstAttribute="centerX" secondItem="PKy-3T-2Se" secondAttribute="centerX" id="v5e-o4-8Tl"/>
-                            <constraint firstItem="HtS-7h-5OC" firstAttribute="top" secondItem="551-kB-rUJ" secondAttribute="bottom" constant="8" id="wrm-9c-7QR"/>
-                            <constraint firstItem="551-kB-rUJ" firstAttribute="centerX" secondItem="HtS-7h-5OC" secondAttribute="centerX" id="zYp-rR-b4z"/>
+                            <constraint firstItem="6U4-71-rjM" firstAttribute="top" secondItem="aoc-Dg-sUt" secondAttribute="bottom" constant="41" id="Ap7-09-mLV"/>
+                            <constraint firstItem="551-kB-rUJ" firstAttribute="top" secondItem="Tpw-Tw-hxG" secondAttribute="bottom" constant="21" id="Eum-Fr-i85"/>
+                            <constraint firstItem="Alr-Tv-zwm" firstAttribute="top" secondItem="zNA-W4-qBt" secondAttribute="bottom" constant="21" id="Gio-tz-4Qn"/>
+                            <constraint firstItem="Alr-Tv-zwm" firstAttribute="leading" secondItem="aoc-Dg-sUt" secondAttribute="trailing" constant="34" id="IrF-XM-NdI"/>
+                            <constraint firstItem="Tpw-Tw-hxG" firstAttribute="leading" secondItem="PKy-3T-2Se" secondAttribute="leadingMargin" id="N7w-t3-mNv"/>
+                            <constraint firstItem="HtS-7h-5OC" firstAttribute="centerX" secondItem="zNA-W4-qBt" secondAttribute="centerX" id="THD-2k-ukQ"/>
+                            <constraint firstItem="zNA-W4-qBt" firstAttribute="leading" secondItem="PKy-3T-2Se" secondAttribute="leading" id="UQs-T0-wX5"/>
+                            <constraint firstAttribute="bottom" secondItem="HtS-7h-5OC" secondAttribute="bottom" constant="268" id="Vcp-Jz-Zwa"/>
+                            <constraint firstItem="HtS-7h-5OC" firstAttribute="leading" secondItem="aoc-Dg-sUt" secondAttribute="leading" id="ehn-vH-QIF"/>
+                            <constraint firstItem="551-kB-rUJ" firstAttribute="centerX" secondItem="HtS-7h-5OC" secondAttribute="centerX" id="i0l-01-LZf"/>
+                            <constraint firstAttribute="trailing" secondItem="zNA-W4-qBt" secondAttribute="trailing" id="jgA-Ax-RP0"/>
+                            <constraint firstItem="Tpw-Tw-hxG" firstAttribute="top" secondItem="4Na-mY-Anv" secondAttribute="bottom" id="sIK-5O-cXU"/>
+                            <constraint firstItem="Tpw-Tw-hxG" firstAttribute="leading" secondItem="HtS-7h-5OC" secondAttribute="leading" id="uOU-E7-tgH"/>
+                            <constraint firstItem="aoc-Dg-sUt" firstAttribute="top" secondItem="zNA-W4-qBt" secondAttribute="bottom" constant="23" id="vjB-H6-xGz"/>
+                            <constraint firstItem="HtS-7h-5OC" firstAttribute="top" secondItem="551-kB-rUJ" secondAttribute="bottom" constant="8" symbolic="YES" id="xyy-EJ-yuM"/>
+                            <constraint firstItem="HtS-7h-5OC" firstAttribute="trailing" secondItem="Alr-Tv-zwm" secondAttribute="trailing" id="z0v-P0-nCh"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="SelectedTextLabel" destination="BHe-aF-Swq" id="jQU-iq-h1G"/>
                         <outlet property="carousel" destination="HtS-7h-5OC" id="1kd-DP-LtO"/>
                         <outlet property="inputCurrency" destination="aoc-Dg-sUt" id="8Hy-Fp-Nuj"/>
+                        <outlet property="priceLabel" destination="zNA-W4-qBt" id="MCa-Ic-0W4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hv6-ve-MIw" userLabel="First Responder" sceneMemberID="firstResponder"/>

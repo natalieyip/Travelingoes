@@ -8,25 +8,39 @@
 
 import UIKit
 import SwiftCarousel
+import Alamofire
+import SwiftyJSON
 
 class CurrencyViewController: UIViewController {
     
     @IBOutlet weak internal var carousel: SwiftCarousel!
-
-    @IBOutlet weak internal var selectedTextLabel: UILabel!
-    
-
     
     var items: [String]?
     var itemsViews: [UILabel]?
     
+    @IBOutlet weak var priceLabel: UILabel!
 
     @IBOutlet weak var inputCurrency: UITextField!
     
-    @IBAction func tapSubmitButton(_ sender: Any) {
-        let currency = inputCurrency.text!
-        print(currency)
+    @IBAction func tapSubmitButton(_ sender: AnyObject) {
         inputCurrency.resignFirstResponder()
+        let currency = inputCurrency.text!
+        let priceBingo = priceLabel.text!
+//        print("user input is \(currency)")
+//        let multiplier = currencyParse
+//        print(didDeselectItem)
+//        print("multiplier from currencyParse is \(multiplier)")
+//        
+        
+        currencyParse(priceBingo: priceBingo, completion: {
+            rate in
+            let conversion = Double(currency)! * rate
+            DispatchQueue.main.async {
+                print(conversion)
+                self.priceLabel.text = "\(currency) dollars converts to \(conversion) \(priceBingo)"
+            }
+        })
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -38,37 +52,37 @@ class CurrencyViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         items = [
-            "Australia Dollar (AUD)",
-            "Bulgaria Lev (BGN)",
-            "Brazil Real (BRL)",
-            "Canada Dollar (CAD)",
-            "Switzerland Franc (CHF)",
-            "China Yuan or Renminbi (CNY)",
-            "Czech Koruna (CZK)",
-            "Denmark Krone (DKK)",
-            "Great Britain Pound (GBP)",
-            "Hong Kong Dollar (HKD)",
-            "Croatia Kuna (HRK)",
-            "Hungary Forint (HUF)",
-            "Indonesia Rupiah (IDR)",
-            "Israel New Shekel (ILS)",
-            "India Rupee (INR)",
-            "Japan Yen (JPY)",
-            "South Korea Won (KRW)",
-            "Malaysia Ringgit (MYR)",
-            "Mexico Peso (MXN)",
-            "Norway Kroner (NOK)",
-            "New Zealand Dollar (NZD)",
-            "Poland Zloty (PLN)",
-            "Philippines Peso (PHP)",
-            "Romanian Leu (RON)",
-            "Russia Rouble (RUB)",
-            "Sweden Krona (SEK)",
-            "Singapore Dollar (SGD)",
-            "Thailand Baht (THB)",
-            "Turkish New Lira (TRY)",
-            "USA Dollar (USD)",
-            "South Africa Rand (ZAR)"]
+            "Australia Dollar: AUD",
+            "Bulgaria Lev: BGN",
+            "Brazil Real: BRL",
+            "Canada Dollar: CAD",
+            "Switzerland Franc: CHF",
+            "China Yuan or Renminbi: CNY",
+            "Czech Koruna: CZK",
+            "Denmark Krone: DKK",
+            "Great Britain Pound: GBP",
+            "Hong Kong Dollar: HKD",
+            "Croatia Kuna: HRK",
+            "Hungary Forint: HUF",
+            "Indonesia Rupiah: IDR",
+            "Israel New Shekel: ILS",
+            "India Rupee: INR",
+            "Japan Yen: JPY",
+            "South Korea Won: KRW",
+            "Malaysia Ringgit: MYR",
+            "Mexico Peso: MXN",
+            "Norway Kroner: NOK",
+            "New Zealand Dollar: NZD",
+            "Poland Zloty: PLN",
+            "Philippines Peso: PHP",
+            "Romanian Leu: RON",
+            "Russia Rouble: RUB",
+            "Sweden Krona: SEK",
+            "Singapore Dollar: SGD",
+            "Thailand Baht: THB",
+            "Turkish New Lira: TRY",
+            "USA Dollar: USD",
+            "South Africa Rand: ZAR"]
         
         itemsViews = items!.map { labelForString($0) }
         carousel.items = itemsViews!
@@ -89,9 +103,9 @@ class CurrencyViewController: UIViewController {
         return text
     }
     
-    //    @IBAction func selectTigers(_ sender: AnyObject) {
-    //        carousel.selectItem(1, animated: true)
-    //    }
+    
+    
+
 }
 
 
@@ -100,13 +114,36 @@ extension CurrencyViewController: SwiftCarouselDelegate {
     func didSelectItem(item: UIView, index: Int, tapped: Bool) -> UIView? {
         if let language = item as? UILabel {
             language.textColor = UIColor.red
-            selectedTextLabel.text = "\(language.text!) selected"
+            priceLabel.text = "\(language.text!.substring(from:language.text!.index(language.text!.endIndex, offsetBy: -3)))"
             
+            let priceBingo = priceLabel.text
+
+            print("THIS IS OUR CURRENCY PARSE BINGO SHENANIGANS")
+//            print(currencyParse(priceBingo: priceBingo!))
+            
+            print("language is \(language)")
             return language
         }
-        
+        print("item is \(item)")
         return item
     }
+    
+    func currencyParse(priceBingo: String, completion: @escaping (Double) -> ()) {
+        
+        Alamofire.request("http://api.fixer.io/latest").responseJSON { response in
+            var multiplier = "test string"
+            guard let data = response.result.value else { return }
+            guard let result = data as? [String: Any] else { return }
+            guard let currencyList = result["rates"] as? [String:AnyObject] else { return }
+            guard let rate = currencyList[priceBingo] as? NSNumber else { return }
+            completion(rate.doubleValue)
+        }
+        
+        
+    }
+    
+    
+    
     
     func didDeselectItem(item: UIView, index: Int) -> UIView? {
         if let language = item as? UILabel {
@@ -118,27 +155,9 @@ extension CurrencyViewController: SwiftCarouselDelegate {
         return item
     }
     
-    func didScroll(toOffset offset: CGPoint) {
-        selectedTextLabel.text = "Spinning up!"
-    }
     
-    func willBeginDragging(withOffset offset: CGPoint) {
-        selectedTextLabel.text = "On the wheel! "
-    }
     
-    func didEndDragging(withOffset offset: CGPoint) {
-        selectedTextLabel.text = "Oh, here we go!"
-    }
-    
-    func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CurrencyViewController.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-    
-    func dismissKeyboard() {
-        view.endEditing(true)
-    }
+ 
 }
 
 
