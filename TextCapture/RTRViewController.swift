@@ -55,6 +55,7 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         }
     }
 
+    
 //# MARK: - LifeCycle
 
     override func viewDidLoad() {
@@ -300,17 +301,24 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                     if let result = response.result.value {
                         let json = JSON(result)
                        
-                       
                         let translatedWord = json["data"]["translations"][0]["translatedText"]
+                        let detectedLanguage = json["data"]["translations"][0]["detectedSourceLanguage"]
                         
                         
+                    
+                            let synthesizer = AVSpeechSynthesizer()
+                            let utterance = AVSpeechUtterance(string: "\(self.textToTranslate)")
+                            utterance.rate = 0.4
+                            utterance.voice = AVSpeechSynthesisVoice(language: "\(detectedLanguage)")
+                            synthesizer.speak(utterance)
+//                        }
                         
-//
-//                            let alert = PCLBlurEffectAlert.Controller(title: "Translation", message: "\(translatedWord)" , effect: UIBlurEffect(style: .extraLight), style: .alert)
-//                            let alertBtn = PCLBlurEffectAlertAction(title: "Cancel", style: .cancel, handler: nil)
-//                            
-//                            alert.addAction(alertBtn)
-//                            alert.show()
+
+                            let alert = PCLBlurEffectAlert.Controller(title: "Translation", message: "\(translatedWord)" , effect: UIBlurEffect(style: .extraLight), style: .alert)
+                            let alertBtn = PCLBlurEffectAlertAction(title: "Cancel", style: .cancel, handler: nil)
+                            
+                            alert.addAction(alertBtn)
+                            alert.show()
                         
                     }
                 }
@@ -341,7 +349,6 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         
         layer.addSublayer(textLayer)
     }
-    
     
     
     

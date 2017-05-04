@@ -11,6 +11,7 @@
 		3D409ED51EB983F4009419F5 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D409ED41EB983F4009419F5 /* AboutMeViewController.swift */; };
 		3D409ED81EBA4841009419F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D409ED71EBA4841009419F5 /* LaunchScreen.storyboard */; };
 		3D409EE01EBA55F9009419F5 /* TranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D409EDF1EBA55F9009419F5 /* TranslationViewController.swift */; };
+		3D409EE21EBAAEEF009419F5 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D409EE11EBAAEEF009419F5 /* CurrencyViewController.swift */; };
 		43BC85B91DA31E2800FC04B0 /* RTRAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC85B81DA31E2800FC04B0 /* RTRAppDelegate.swift */; };
 		43BC85BB1DA31E2800FC04B0 /* RTRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC85BA1DA31E2800FC04B0 /* RTRViewController.swift */; };
 		43BC85BE1DA31E2800FC04B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BC85BC1DA31E2800FC04B0 /* Main.storyboard */; };
@@ -71,6 +72,7 @@
 		3D409ED41EB983F4009419F5 /* AboutMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		3D409ED71EBA4841009419F5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D409EDF1EBA55F9009419F5 /* TranslationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationViewController.swift; sourceTree = "<group>"; };
+		3D409EE11EBAAEEF009419F5 /* CurrencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		43BC85B51DA31E2800FC04B0 /* TextCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BC85B81DA31E2800FC04B0 /* RTRAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTRAppDelegate.swift; sourceTree = "<group>"; };
 		43BC85BA1DA31E2800FC04B0 /* RTRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTRViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				43BC85DC1DA4330200FC04B0 /* RTRHexColor.swift */,
 				3D409ED71EBA4841009419F5 /* LaunchScreen.storyboard */,
 				43BC85BC1DA31E2800FC04B0 /* Main.storyboard */,
+				3D409EE11EBAAEEF009419F5 /* CurrencyViewController.swift */,
 				3D409EDF1EBA55F9009419F5 /* TranslationViewController.swift */,
 				3D409ED01EB98159009419F5 /* MainViewController.swift */,
 				43BC85BF1DA31E2800FC04B0 /* Assets.xcassets */,
@@ -355,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D409EE01EBA55F9009419F5 /* TranslationViewController.swift in Sources */,
+				3D409EE21EBAAEEF009419F5 /* CurrencyViewController.swift in Sources */,
 				43BC85DD1DA4330200FC04B0 /* RTRHexColor.swift in Sources */,
 				3D409ED51EB983F4009419F5 /* AboutMeViewController.swift in Sources */,
 				43BC85BB1DA31E2800FC04B0 /* RTRViewController.swift in Sources */,

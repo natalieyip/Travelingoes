@@ -10,9 +10,13 @@ import UIKit
 
 class TranslationViewController: UIViewController {
     
+    @IBOutlet weak var Label: UILabel!
+    
+    var LabelText = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Second View"
+        Label.text = LabelText
     }
     
     override func didReceiveMemoryWarning() {
