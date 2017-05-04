@@ -23,6 +23,15 @@ class CurrencyViewController: UIViewController {
 
     @IBOutlet weak var inputCurrency: UITextField!
     
+    @IBAction func tapSubmitButton(_ sender: Any) {
+        let currency = inputCurrency.text!
+        print(currency)
+        inputCurrency.resignFirstResponder()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
