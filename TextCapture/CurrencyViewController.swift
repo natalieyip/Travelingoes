@@ -26,11 +26,7 @@ class CurrencyViewController: UIViewController {
         inputCurrency.resignFirstResponder()
         let currency = inputCurrency.text!
         let priceBingo = priceLabel.text!
-//        print("user input is \(currency)")
-//        let multiplier = currencyParse
-//        print(didDeselectItem)
-//        print("multiplier from currencyParse is \(multiplier)")
-//        
+
         
         currencyParse(priceBingo: priceBingo, completion: {
             rate in
@@ -102,9 +98,6 @@ class CurrencyViewController: UIViewController {
         
         return text
     }
-    
-    
-    
 
 }
 
@@ -118,13 +111,10 @@ extension CurrencyViewController: SwiftCarouselDelegate {
             
             let priceBingo = priceLabel.text
 
-            print("THIS IS OUR CURRENCY PARSE BINGO SHENANIGANS")
-//            print(currencyParse(priceBingo: priceBingo!))
             
-            print("language is \(language)")
             return language
         }
-        print("item is \(item)")
+
         return item
     }
     
