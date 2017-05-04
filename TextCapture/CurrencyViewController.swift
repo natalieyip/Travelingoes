@@ -15,8 +15,14 @@ class CurrencyViewController: UIViewController {
 
     @IBOutlet weak internal var selectedTextLabel: UILabel!
     
+
+    
     var items: [String]?
     var itemsViews: [UILabel]?
+    
+
+    @IBOutlet weak var inputCurrency: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -113,6 +119,16 @@ extension CurrencyViewController: SwiftCarouselDelegate {
     
     func didEndDragging(withOffset offset: CGPoint) {
         selectedTextLabel.text = "Oh, here we go!"
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CurrencyViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
 }
 
