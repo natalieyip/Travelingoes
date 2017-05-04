@@ -34,7 +34,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Currency"/>
                                 <connections>
-                                    <segue destination="IvU-II-wal" kind="show" id="BZC-DT-XXQ"/>
+                                    <segue destination="twI-Z6-sk6" kind="show" id="aFb-01-bbZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,6 +44,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tbo-3Y-BGA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-755.625" y="35.91549295774648"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LSL-P7-JsG">
+            <objects>
+                <viewController id="twI-Z6-sk6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Na-mY-Anv"/>
+                        <viewControllerLayoutGuide type="bottom" id="6U4-71-rjM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n62-VW-yaR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jg-N3-9WM">
+                                <rect key="frame" x="16" y="28" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="scp-0O-9CY" kind="show" id="Hdp-xZ-esk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hv6-ve-MIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1674" y="750"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -175,34 +203,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="69.375" y="35.91549295774648"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="rhS-EP-rnk">
-            <objects>
-                <viewController id="IvU-II-wal" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Q3s-JH-dOm"/>
-                        <viewControllerLayoutGuide type="bottom" id="gTV-gg-jCk"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CoH-iI-Lq3" customClass="CurrencyViewController" customModule="TextCapture" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imy-cV-kfm">
-                                <rect key="frame" x="19" y="28" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Home"/>
-                                <connections>
-                                    <segue destination="scp-0O-9CY" kind="show" id="gGp-b0-gpq"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Bw-Yi-KI3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-756" y="788"/>
         </scene>
     </scenes>
     <resources>
