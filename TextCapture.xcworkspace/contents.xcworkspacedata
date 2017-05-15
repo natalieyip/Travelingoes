@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:TextCapture.xcodeproj">
+      location = "group:/Users/natalie.yip/Downloads/abbyy-rtr-sdk-1.0.3.190.iOS/sample-textcapture-swift/TextCapture.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

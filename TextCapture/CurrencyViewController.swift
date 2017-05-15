@@ -82,7 +82,7 @@ class CurrencyViewController: UIViewController {
         
         itemsViews = items!.map { labelForString($0) }
         carousel.items = itemsViews!
-        carousel.resizeType = .visibleItemsPerPage(3)
+        carousel.resizeType = .visibleItemsPerPage(2)
         carousel.defaultSelectedIndex = 3
         carousel.delegate = self
         carousel.scrollType = .default
@@ -91,9 +91,9 @@ class CurrencyViewController: UIViewController {
     func labelForString(_ string: String) -> UILabel {
         let text = UILabel()
         text.text = string
-        text.textColor = .black
+        text.textColor = .white
         text.textAlignment = .center
-        text.font = .systemFont(ofSize: 24.0)
+        text.font = .systemFont(ofSize: 19.5)
         text.numberOfLines = 0
         
         return text
@@ -106,7 +106,7 @@ extension CurrencyViewController: SwiftCarouselDelegate {
     
     func didSelectItem(item: UIView, index: Int, tapped: Bool) -> UIView? {
         if let language = item as? UILabel {
-            language.textColor = UIColor.red
+            language.textColor = UIColor(red: 0.93, green: 0.88, blue:0.30, alpha:1.0)
             priceLabel.text = "\(language.text!.substring(from:language.text!.index(language.text!.endIndex, offsetBy: -3)))"
             
             let priceBingo = priceLabel.text
@@ -136,7 +136,7 @@ extension CurrencyViewController: SwiftCarouselDelegate {
     
     func didDeselectItem(item: UIView, index: Int) -> UIView? {
         if let language = item as? UILabel {
-            language.textColor = .black
+            language.textColor = .white
             
             return language
         }

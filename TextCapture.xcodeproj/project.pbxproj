@@ -500,7 +500,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.travelingoes;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TextCapture;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TextCapture/RtrSamples-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -524,7 +524,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.travelingoes;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TextCapture;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TextCapture/RtrSamples-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
