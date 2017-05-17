@@ -294,7 +294,7 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                 
                 print("This is final string thats available: \(textToTranslate)")
                 
-                Alamofire.request("https://translation.googleapis.com/language/translate/v2?key=AIzaSyDKA149_eTmknKyTY28YkmlmyB8D7xjAXw&target=en&q=\(textToTranslate)").responseJSON { response in
+                Alamofire.request("https://translation.googleapis.com/language/translate/v2?key=&target=en&q=\(textToTranslate)").responseJSON { response in
                     print(response.data)
                     print(response.result)
                     
