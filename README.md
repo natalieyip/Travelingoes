@@ -19,5 +19,5 @@ Part of the technology solution was rapid prototyping. We didn't just make this 
 
 We utilized Basecamp, which is a lightweight project management tool to keep track of tasks, files, research notes, scheduling and internal team communications. It made breaking down of our goals into concrete action steps, easy and it kept us accountable to the project and each other. It was motivational to see how much progress we were making each day.
 
-##Team: 
+## Team: 
 Natalie Yip, May Jawdat, Dylan Metas, Ben Acevedo, Joseph Huang
