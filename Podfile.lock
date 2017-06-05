@@ -1,12 +1,18 @@
 PODS:
   - Alamofire (4.4.0)
+  - PCLBlurEffectAlert (2.1.1)
+  - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
+  - PCLBlurEffectAlert
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  PCLBlurEffectAlert: 9671c027e17e9b054ed372fbecded167ea46daf9
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 6bf6b5eab5470ef1a25ede4288cd8fd74511ebfd
+PODFILE CHECKSUM: 3cb2cb5712ce5c8e72f8b14d395eb73e1056a20c
 
 COCOAPODS: 1.2.1
