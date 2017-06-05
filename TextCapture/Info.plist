@@ -22,10 +22,19 @@
 	<string>${BUNDLE_VERSION}</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict/>
+	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>NSCameraUsageDescription</string>
+	<key>UILaunchImageFile</key>
+	<string>MyLaunchImage</string>
 	<key>UILaunchStoryboardName</key>
-	<string>iPhone</string>
+	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -44,10 +53,5 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
-	 <key>NSAppTransportSecurity</key>
- <dict>
-      <key>NSAllowsArbitraryLoads</key>
-     <true/>
- </dict>
 </dict>
 </plist>

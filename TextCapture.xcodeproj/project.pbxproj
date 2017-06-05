@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D409ED11EB98159009419F5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D409ED01EB98159009419F5 /* MainViewController.swift */; };
+		3D409ED51EB983F4009419F5 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D409ED41EB983F4009419F5 /* AboutMeViewController.swift */; };
+		3D409ED81EBA4841009419F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D409ED71EBA4841009419F5 /* LaunchScreen.storyboard */; };
+		3D409EE01EBA55F9009419F5 /* TranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D409EDF1EBA55F9009419F5 /* TranslationViewController.swift */; };
+		3D409EE21EBAAEEF009419F5 /* CurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D409EE11EBAAEEF009419F5 /* CurrencyViewController.swift */; };
 		43BC85B91DA31E2800FC04B0 /* RTRAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC85B81DA31E2800FC04B0 /* RTRAppDelegate.swift */; };
 		43BC85BB1DA31E2800FC04B0 /* RTRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BC85BA1DA31E2800FC04B0 /* RTRViewController.swift */; };
 		43BC85BE1DA31E2800FC04B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43BC85BC1DA31E2800FC04B0 /* Main.storyboard */; };
@@ -63,6 +68,11 @@
 /* Begin PBXFileReference section */
 		1483117D48526378DBC9EDB3 /* Pods-TextCapture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextCapture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextCapture/Pods-TextCapture.debug.xcconfig"; sourceTree = "<group>"; };
 		1D1E9A931FB00C8B1D696D5A /* Pods_TextCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D409ED01EB98159009419F5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3D409ED41EB983F4009419F5 /* AboutMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		3D409ED71EBA4841009419F5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D409EDF1EBA55F9009419F5 /* TranslationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationViewController.swift; sourceTree = "<group>"; };
+		3D409EE11EBAAEEF009419F5 /* CurrencyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyViewController.swift; sourceTree = "<group>"; };
 		43BC85B51DA31E2800FC04B0 /* TextCapture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextCapture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BC85B81DA31E2800FC04B0 /* RTRAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTRAppDelegate.swift; sourceTree = "<group>"; };
 		43BC85BA1DA31E2800FC04B0 /* RTRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTRViewController.swift; sourceTree = "<group>"; };
@@ -130,11 +140,16 @@
 			children = (
 				CF5693381DCB53D3006059E2 /* TextCapture.entitlements */,
 				43BC85D91DA3509E00FC04B0 /* RtrSamples-Bridging-Header.h */,
+				3D409ED41EB983F4009419F5 /* AboutMeViewController.swift */,
 				43BC85B81DA31E2800FC04B0 /* RTRAppDelegate.swift */,
 				43BC85CF1DA326F200FC04B0 /* RTRSelectedAreaView.swift */,
 				43BC85BA1DA31E2800FC04B0 /* RTRViewController.swift */,
 				43BC85DC1DA4330200FC04B0 /* RTRHexColor.swift */,
+				3D409ED71EBA4841009419F5 /* LaunchScreen.storyboard */,
 				43BC85BC1DA31E2800FC04B0 /* Main.storyboard */,
+				3D409EE11EBAAEEF009419F5 /* CurrencyViewController.swift */,
+				3D409EDF1EBA55F9009419F5 /* TranslationViewController.swift */,
+				3D409ED01EB98159009419F5 /* MainViewController.swift */,
 				43BC85BF1DA31E2800FC04B0 /* Assets.xcassets */,
 				43BC85C41DA31E2800FC04B0 /* Info.plist */,
 			);
@@ -247,7 +262,7 @@
 				TargetAttributes = {
 					43BC85B41DA31E2800FC04B0 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = HNAJJ5CKA7;
+						DevelopmentTeam = S5GF4SQ57Y;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -281,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF2C54321DD1C132006B70FB /* AbbyyRtrSdk.license in Resources */,
+				3D409ED81EBA4841009419F5 /* LaunchScreen.storyboard in Resources */,
 				43BC85C01DA31E2800FC04B0 /* Assets.xcassets in Resources */,
 				43BC85BE1DA31E2800FC04B0 /* Main.storyboard in Resources */,
 			);
@@ -341,10 +357,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D409EE01EBA55F9009419F5 /* TranslationViewController.swift in Sources */,
+				3D409EE21EBAAEEF009419F5 /* CurrencyViewController.swift in Sources */,
 				43BC85DD1DA4330200FC04B0 /* RTRHexColor.swift in Sources */,
+				3D409ED51EB983F4009419F5 /* AboutMeViewController.swift in Sources */,
 				43BC85BB1DA31E2800FC04B0 /* RTRViewController.swift in Sources */,
 				43BC85D01DA326F200FC04B0 /* RTRSelectedAreaView.swift in Sources */,
 				43BC85B91DA31E2800FC04B0 /* RTRAppDelegate.swift in Sources */,
+				3D409ED11EB98159009419F5 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +491,7 @@
 				CODE_SIGN_ENTITLEMENTS = TextCapture/TextCapture.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = HNAJJ5CKA7;
+				DEVELOPMENT_TEAM = S5GF4SQ57Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../libs,
@@ -479,8 +499,8 @@
 				INFOPLIST_FILE = TextCapture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.travellingo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.travelingoes;
+				PRODUCT_NAME = TextCapture;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TextCapture/RtrSamples-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -495,7 +515,7 @@
 				CODE_SIGN_ENTITLEMENTS = TextCapture/TextCapture.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = HNAJJ5CKA7;
+				DEVELOPMENT_TEAM = S5GF4SQ57Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../libs,
@@ -503,8 +523,8 @@
 				INFOPLIST_FILE = TextCapture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.travellingo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.travelingoes;
+				PRODUCT_NAME = TextCapture;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "TextCapture/RtrSamples-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

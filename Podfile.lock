@@ -1,18 +1,21 @@
 PODS:
   - Alamofire (4.4.0)
   - PCLBlurEffectAlert (2.1.1)
+  - SwiftCarousel (0.8.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
   - Alamofire (~> 4.4)
   - PCLBlurEffectAlert
+  - SwiftCarousel
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   PCLBlurEffectAlert: 9671c027e17e9b054ed372fbecded167ea46daf9
+  SwiftCarousel: a62f4e9b944d1bca4ccfe3f28abb6119e3e36b12
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 3cb2cb5712ce5c8e72f8b14d395eb73e1056a20c
+PODFILE CHECKSUM: 5938a726f07f05b38e514ca6785d35816ecf3c3a
 
 COCOAPODS: 1.2.1

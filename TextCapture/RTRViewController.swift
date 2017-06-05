@@ -55,6 +55,7 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         }
     }
 
+    
 //# MARK: - LifeCycle
 
     override func viewDidLoad() {
@@ -293,15 +294,24 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                 
                 print("This is final string thats available: \(textToTranslate)")
                 
-                Alamofire.request("https://translation.googleapis.com/language/translate/v2?key=AIzaSyDKA149_eTmknKyTY28YkmlmyB8D7xjAXw&target=en&q=\(textToTranslate)").responseJSON { response in
+                Alamofire.request("https://translation.googleapis.com/language/translate/v2?key=&target=en&q=\(textToTranslate)").responseJSON { response in
                     print(response.data)
                     print(response.result)
                     
                     if let result = response.result.value {
                         let json = JSON(result)
                        
-                       
                         let translatedWord = json["data"]["translations"][0]["translatedText"]
+                        let detectedLanguage = json["data"]["translations"][0]["detectedSourceLanguage"]
+                        
+                        
+                    
+                            let synthesizer = AVSpeechSynthesizer()
+                            let utterance = AVSpeechUtterance(string: "\(self.textToTranslate)")
+                            utterance.rate = 0.4
+                            utterance.voice = AVSpeechSynthesisVoice(language: "\(detectedLanguage)")
+                            synthesizer.speak(utterance)
+//                        }
                         
 
                             let alert = PCLBlurEffectAlert.Controller(title: "Translation", message: "\(translatedWord)" , effect: UIBlurEffect(style: .extraLight), style: .alert)
@@ -309,7 +319,6 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                             
                             alert.addAction(alertBtn)
                             alert.show()
-                        
                         
                     }
                 }
@@ -340,6 +349,8 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         
         layer.addSublayer(textLayer)
     }
+    
+    
     
     func drawQuadrangle(_ p0: CGPoint, _ p1: CGPoint, _ p2: CGPoint, _ p3: CGPoint, _ layer: CALayer, _ progress: RTRResultStabilityStatus) {
         let area = CAShapeLayer() 
