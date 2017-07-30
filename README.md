@@ -11,8 +11,10 @@ Utilizing the embeded camera in the smart phone in your hand, Travelingoes autod
 The full demo is uploaded [on Youtube](https://www.youtube.com/watch?v=QwpH1cT8epk) for your perusal.
 
 ### Splash Page 
+![alt text](https://natalieyip.github.io/images/TravelLingoes.png)
 
 ### Currency Converter 
+![alt text](https://media.giphy.com/media/Zqm3KpxwtD1f2/giphy.gif)
 
 ### Translator 
 ![alt text](https://media.giphy.com/media/DdrVQEkM9VaJG/giphy.gif)
