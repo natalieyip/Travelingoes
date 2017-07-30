@@ -10,18 +10,20 @@ Utilizing the embeded camera in the smart phone in your hand, Travelingoes autod
 ## Demo: 
 The full demo is uploaded [on Youtube](https://www.youtube.com/watch?v=QwpH1cT8epk) for your perusal.
 
+
+<h3 align="center"> Splash Page </h3>  
 <p align="center">
-<h3> Splash Page </h3>  
 <img src="https://natalieyip.github.io/images/TravelLingoes.png"> 
 </p> 
 
-<h3> Currency Converter </h3> 
+<h3 align="center"> Currency Converter </h3> 
 <p align="center">
 <img src="https://media.giphy.com/media/Zqm3KpxwtD1f2/giphy.gif">
 </p> 
 
+
+<h3 align="center"> Translator </h3> 
 <p align="center">
-<h3> Translator </h3>  
 <img src="https://media.giphy.com/media/DdrVQEkM9VaJG/giphy.gif">
 </p> 
 
