@@ -12,17 +12,17 @@ The full demo is uploaded [on Youtube](https://www.youtube.com/watch?v=QwpH1cT8e
 
 <p align="center">
 <h3> Splash Page </h3>  
-![alt text](https://natalieyip.github.io/images/TravelLingoes.png)
+<img src="https://natalieyip.github.io/images/TravelLingoes.png"> 
 </p> 
 
 <p align="center">
 <h3> Currency Converter </h3>  
-![alt text](https://media.giphy.com/media/Zqm3KpxwtD1f2/giphy.gif)
+<img src="https://media.giphy.com/media/Zqm3KpxwtD1f2/giphy.gif">
 </p> 
 
 <p align="center">
 <h3> Translator </h3>  
-![alt text](https://media.giphy.com/media/DdrVQEkM9VaJG/giphy.gif)
+<img src="https://media.giphy.com/media/DdrVQEkM9VaJG/giphy.gif">
 </p> 
 
 ## The Technology: 
