@@ -5,9 +5,18 @@
 Our project's inspiration comes from backpacking in Europe and not having a quick reference for signage in another language. Many times travel books and language aids are abbreviated. They may have gaps in the language's syntax and phrases not outside of a common phrasebook and that's where our app comes in.
 
 ## The Solution: 
+Utilizing the embeded camera in the smart phone in your hand, Travelingoes autodetects and captures text via an optical character recognition or OCR. It leverages the power of Google Translate for concise and accurate language translation. Our world currency converter can convert between 31 world currencies.
+
+## Demo: 
+The full demo is uploaded [on Youtube](https://www.youtube.com/watch?v=QwpH1cT8epk) for your perusal.
+
+### Splash Page 
+
+### Currency Converter 
+
+### Translator 
 ![alt text](https://media.giphy.com/media/DdrVQEkM9VaJG/giphy.gif)
 
-Utilizing the embeded camera in the smart phone in your hand, Travelingoes autodetects and captures text via an optical character recognition or OCR. It leverages the power of Google Translate for concise and accurate language translation. Our world currency converter can convert between 31 world currencies.
 
 ## The Technology: 
 
@@ -20,12 +29,12 @@ Part of the technology solution was rapid prototyping. We didn't just make this 
 We utilized Basecamp, which is a lightweight project management tool to keep track of tasks, files, research notes, scheduling and internal team communications. It made breaking down of our goals into concrete action steps, easy and it kept us accountable to the project and each other. It was motivational to see how much progress we were making each day.
 
 ## Team: 
-[Natalie Yip](https://github.com/natalieyip)
+Natalie Yip [Github](https://github.com/natalieyip)
 
-[May Jawdat](https://github.com/mayjawdat)
+May Jawdat [Github](https://github.com/mayjawdat)
 
-[Dylan Metas](https://github.com/dmetas)
+Dylan Metas [Github](https://github.com/dmetas)
 
-[Ben Acevedo](https://github.com/bacevedo01)
+Ben Acevedo [Github](https://github.com/bacevedo01)
 
-[Joseph Huang](https://github.com/timeswap)
+Joseph Huang [Github](https://github.com/timeswap)
