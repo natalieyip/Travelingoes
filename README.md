@@ -10,6 +10,7 @@ Utilizing the embeded camera in the smart phone in your hand, Travelingoes autod
 ## Demo: 
 The full demo is uploaded [on Youtube](https://www.youtube.com/watch?v=QwpH1cT8epk) for your perusal.
 
+<p align="center">
 ### Splash Page 
 ![alt text](https://natalieyip.github.io/images/TravelLingoes.png)
 
@@ -18,7 +19,7 @@ The full demo is uploaded [on Youtube](https://www.youtube.com/watch?v=QwpH1cT8e
 
 ### Translator 
 ![alt text](https://media.giphy.com/media/DdrVQEkM9VaJG/giphy.gif)
-
+</p> 
 
 ## The Technology: 
 
@@ -31,12 +32,12 @@ Part of the technology solution was rapid prototyping. We didn't just make this 
 We utilized Basecamp, which is a lightweight project management tool to keep track of tasks, files, research notes, scheduling and internal team communications. It made breaking down of our goals into concrete action steps, easy and it kept us accountable to the project and each other. It was motivational to see how much progress we were making each day.
 
 ## Team: 
-Natalie Yip [Github](https://github.com/natalieyip)
+Natalie Yip[(Github)](https://github.com/natalieyip)
 
-May Jawdat [Github](https://github.com/mayjawdat)
+May Jawdat[(Github)](https://github.com/mayjawdat)
 
-Dylan Metas [Github](https://github.com/dmetas)
+Dylan Metas[(Github)](https://github.com/dmetas)
 
-Ben Acevedo [Github](https://github.com/bacevedo01)
+Ben Acevedo[(Github)](https://github.com/bacevedo01)
 
-Joseph Huang [Github](https://github.com/timeswap)
+Joseph Huang[(Github)](https://github.com/timeswap)
