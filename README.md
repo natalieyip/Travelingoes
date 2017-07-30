@@ -17,7 +17,7 @@ The full demo is uploaded [on Youtube](https://www.youtube.com/watch?v=QwpH1cT8e
 
 <p align="center">
 <h3> Currency Converter </h3>  
-<img src="https://media.giphy.com/media/Zqm3KpxwtD1f2/giphy.gif">
+<img align="center" src="https://media.giphy.com/media/Zqm3KpxwtD1f2/giphy.gif">
 </p> 
 
 <p align="center">
